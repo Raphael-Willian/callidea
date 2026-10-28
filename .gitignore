@@ -32,6 +32,11 @@ build/
 ### VS Code ###
 .vscode/
 
+### Arquivos de Configuração Possivelmente Sensíveis ###
 .env
 application.yaml
 application.yml
+
+### Documentos Auxiliares para Desenvolvimento ###
+RELATORIO.md
+guia.txt
