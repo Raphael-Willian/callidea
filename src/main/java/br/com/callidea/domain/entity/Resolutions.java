@@ -24,6 +24,10 @@ public class Resolutions {
         this.createdAt = Instant.now();
     }
 
+    public Resolutions() {
+        this.createdAt = Instant.now();
+    }
+
     public UUID getId() {
         return id;
     }
