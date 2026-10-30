@@ -56,7 +56,6 @@ public class ResolutionMongoRepository implements ResolutionRepository {
 
     public Resolutions toDomain(ResolutionDocument persist) {
         Resolutions resolutions = new Resolutions(
-                persist.getId(),
                 persist.getFkIdeas(),
                 persist.getFkUserSolved(),
                 persist.getStars(),

@@ -14,8 +14,8 @@ public class Resolutions {
     private List<Avaliations> avaliationsList;
     private final Instant createdAt;
 
-    public Resolutions(UUID id, UUID fkIdeas, UUID fkUserSolved, int stars, String linkGitHubOrPortfolio, List<Avaliations> avaliationsList) {
-        this.id = id;
+    public Resolutions(UUID fkIdeas, UUID fkUserSolved, int stars, String linkGitHubOrPortfolio, List<Avaliations> avaliationsList) {
+        this.id = UUID.randomUUID();
         this.fkIdeas = fkIdeas;
         this.fkUserSolved = fkUserSolved;
         this.stars = stars;
@@ -70,5 +70,9 @@ public class Resolutions {
 
     public void setAvaliationsList(List<Avaliations> avaliationsList) {
         this.avaliationsList = avaliationsList;
+    }
+
+    public Instant getCreatedAt() {
+        return createdAt;
     }
 }
